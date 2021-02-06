@@ -29,6 +29,24 @@ namespace NUnitTestNumLit
 
         }
 
-  
+        [Test]
+        public void TestGet1()
+        {
+            //Arrange=preparacion
+            string num = "5";
+
+            string esperado = "CINCO";
+
+            NumLitController Letra = new NumLitController();
+
+            //Act=ejecution
+            string resultado = Letra.enletras(num);
+
+            //Assert=Verification
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
     }
 }
