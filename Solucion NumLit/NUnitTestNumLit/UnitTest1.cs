@@ -65,6 +65,26 @@ namespace NUnitTestNumLit
 
         }
 
+        [Test]
+        public void TestGet3()
+        {
+            //Arrange=preparacion
+            string num = "1234567,89";
+
+            string esperado = "UN MILLON DOSCIENTOS TREINTA Y CUATRO MIL QUINIENTOS SESENTA Y SIETE CON 89/100";
+
+            NumLitController Letra = new NumLitController();
+
+            //Act=ejecution
+            string resultado = Letra.enletras(num);
+
+            //Assert=Verification
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+      
+
 
     }
 }
