@@ -47,6 +47,24 @@ namespace NUnitTestNumLit
 
         }
 
+        [Test]
+        public void TestGet2()
+        {
+            //Arrange=preparacion
+            string num = "10,2";
+
+            string esperado = "DIEZ CON 20/100";
+
+            NumLitController Letra = new NumLitController();
+
+            //Act=ejecution
+            string resultado = Letra.enletras(num);
+
+            //Assert=Verification
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
 
     }
 }
