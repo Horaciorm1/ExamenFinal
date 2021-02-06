@@ -83,7 +83,25 @@ namespace NUnitTestNumLit
 
         }
 
-      
+        [Test]
+        public void TestGet4()
+        {
+            //Arrange=preparacion
+            string num = "- 3";
+
+            string esperado = "";
+
+            NumLitController Letra = new NumLitController();
+
+            //Act=ejecution
+            string resultado = Letra.enletras(num);
+
+            //Assert=Verification
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
 
 
     }
